@@ -1,11 +1,11 @@
 const http = require('http')
 const port = 5000;
 
-const jsonData = JSON.stringify({name:"Mithilesh",age:24})
+const data = JSON.stringify({name:"Mithilesh",age:24})
 
 const server = http.createServer((req,res)=>{
-    res.write(`<h1>It is my First node.js project</h1>`)
-    res.write(jsonData)
+    res.write(`<h1>It is my First node.js Assignment</h1>`)
+    res.write(data)
     res.end()
 })
 
